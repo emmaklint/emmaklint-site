@@ -9,4 +9,4 @@ Static site, no build step. Everything lives in `index.html` and `styles.css`.
 
 ## Updating
 - Posts: edit the four `<a class="post">` blocks in `index.html`, and drop new images in `/images`.
-- Colours: all in the `:root` block at the top of `styles.css`.
+- Colors: all in the `:root` block at the top of `styles.css`.
