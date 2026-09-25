@@ -1,0 +1,11 @@
+{
+  "name": "Emma Klint",
+  "short_name": "Emma Klint",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#98A55A",
+  "background_color": "#F7E7E2",
+  "display": "browser"
+}
