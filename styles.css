@@ -146,6 +146,7 @@ h1, h2, p { margin: 0; }
 .post img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px; }
 .post time { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--ink-soft); }
 .post-title { font-size: 24px; font-weight: 600; line-height: 1.3; letter-spacing: -0.01em; max-width: 30ch; }
+.post-desc { margin-top: -4px; color: var(--ink-soft); max-width: 38em; }
 .post:hover .post-title { text-decoration: underline; text-decoration-thickness: 2px; }
 
 /* Footer */
