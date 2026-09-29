@@ -59,7 +59,7 @@ h1, h2, p { margin: 0; }
 }
 .site-header nav { display: flex; gap: 32px; font-size: 15px; }
 .site-header nav a { text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
-.site-header nav a:hover { text-decoration: underline; }
+.site-header nav a:hover, .site-header nav a[aria-current="page"] { text-decoration: underline; }
 
 /* Hero */
 .hero {
@@ -149,6 +149,22 @@ h1, h2, p { margin: 0; }
 .post-desc { margin-top: -4px; color: var(--ink-soft); max-width: 38em; }
 .post:hover .post-title { text-decoration: underline; text-decoration-thickness: 2px; }
 
+/* Coming soon */
+.page-soon { display: flex; flex-direction: column; min-height: 100svh; }
+.page-soon main { flex: 1; display: flex; flex-direction: column; }
+.soon {
+  flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 32px;
+  min-height: 560px;
+  padding: 96px var(--pad);
+  background: var(--olive);
+}
+.soon-label { font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+.soon h1 {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(64px, 11vw, 168px); line-height: 0.9; letter-spacing: -0.045em;
+}
+.soon-sub { font-size: 20px; line-height: 1.5; max-width: 34em; }
+
 /* Footer */
 .site-footer {
   display: flex; align-items: flex-end; justify-content: space-between; gap: 32px 40px; flex-wrap: wrap;
@@ -192,6 +208,9 @@ h1, h2, p { margin: 0; }
   .publication { font-size: 26px; }
   .posts { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .post-title { font-size: 21px; }
+  .soon { min-height: calc(100svh - 64px); padding-block: 56px; gap: 24px; }
+  .site-header nav .nav-hello { display: none; }
+  .soon-sub { font-size: 17px; }
   .site-footer { padding-top: 72px; }
   .footer-links { align-items: flex-start; font-size: 18px; }
 }

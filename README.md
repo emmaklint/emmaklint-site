@@ -1,6 +1,6 @@
 # emmaklint.com
 
-Static site, no build step. Everything lives in `index.html` and `styles.css`.
+Static site, no build step. Pages are `index.html` and `portfolio.html` (served at `/portfolio`), sharing `styles.css`.
 
 ## Deploy on Vercel
 1. Push this folder to a new GitHub repo.
