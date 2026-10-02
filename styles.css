@@ -225,7 +225,6 @@ a.post:hover .post-title { text-decoration: underline; text-decoration-thickness
   .publication { font-size: 26px; }
   .posts { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .post-title { font-size: 21px; }
-  .site-header nav .nav-hello { display: none; }
   .page-intro { padding-block: 64px 56px; gap: 20px; }
   .page-intro p { font-size: 17px; }
   .teaser { padding-bottom: 72px; }
