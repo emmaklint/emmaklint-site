@@ -1,9 +1,6 @@
 {
   "framework": null,
   "cleanUrls": true,
-  "redirects": [
-    { "source": "/portfolio", "destination": "/work", "permanent": true }
-  ],
   "headers": [
     {
       "source": "/images/(.*)",
