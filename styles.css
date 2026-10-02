@@ -77,7 +77,7 @@ h1, h2, p { margin: 0; }
   font-size: clamp(34px, 4.2vw, 60px); line-height: 1.05; letter-spacing: -0.03em;
   max-width: 22ch;
 }
-.hero-sub { font-size: 20px; line-height: 1.5; }
+.hero-sub { font-size: 20px; line-height: 1.5; max-width: 34em; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 8px; font-size: 16px; }
 .button {
   display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px;
@@ -237,4 +237,16 @@ a.post:hover .post-title { text-decoration: underline; text-decoration-thickness
   .teaser-card p { font-size: 17px; }
   .site-footer { padding-top: 72px; }
   .footer-links { align-items: flex-start; font-size: 18px; }
+}
+
+/* Large screens: content stays in a centered 1440px column, backgrounds stay full width */
+@media (min-width: 1600px) {
+  :root { --pad: calc((100vw - 1440px) / 2); }
+  .hero {
+    grid-template-columns: minmax(0, 1fr) min(calc(620px + (100vw - 1600px) * 0.75), 1100px);
+    min-height: min(calc(720px + (100vw - 1600px) * 0.25), 900px);
+  }
+  .hero h1, .about-belief { font-size: min(calc(60px + (100vw - 1600px) * 0.04), 76px); }
+  .hero-sub { font-size: 21px; }
+  .site-header nav { font-size: 16px; }
 }
