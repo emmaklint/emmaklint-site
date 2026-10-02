@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Emma Klint, identity, web &amp; digital design in Stockholm</title>
-<meta name="description" content="I design identities, websites and digital things for people and small organizations with something interesting to say.">
+<meta name="description" content="I design identities, websites and digital products for people and small organizations with something interesting to say.">
 <link rel="canonical" href="https://emmaklint.com/">
 <meta name="theme-color" content="#98A55A">
 
@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://emmaklint.com/">
 <meta property="og:site_name" content="Emma Klint">
 <meta property="og:title" content="Emma Klint, identity, web &amp; digital design">
-<meta property="og:description" content="I design identities, websites and digital things for people and small organizations with something interesting to say.">
+<meta property="og:description" content="I design identities, websites and digital products for people and small organizations with something interesting to say.">
 <meta property="og:image" content="https://emmaklint.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Emma Klint, identity, web &amp; digital design">
-<meta name="twitter:description" content="I design identities, websites and digital things for people and small organizations with something interesting to say.">
+<meta name="twitter:description" content="I design identities, websites and digital products for people and small organizations with something interesting to say.">
 <meta name="twitter:image" content="https://emmaklint.com/og-image.jpg">
 
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -55,8 +55,8 @@
 <header class="site-header">
   <a class="wordmark" href="/">Emma Klint</a>
   <nav aria-label="Main">
-    <a href="/portfolio">Portfolio</a>
-    <a href="#about">About</a>
+    <a href="/work">Work</a>
+    <a href="/services">Services</a>
     <a href="#writing">Writing</a>
     <a href="#hello" class="nav-hello">Say hello</a>
   </nav>
@@ -65,8 +65,8 @@
 <main id="main">
   <section class="hero">
     <div class="hero-text">
-      <h1>I design identities, websites and digital things for people and small organizations with something interesting to say.</h1>
-      <p class="hero-sub">Identity, web &amp; digital design, Stockholm</p>
+      <h1>I design identities, websites and digital products for people and small organizations with something interesting to say.</h1>
+      <p class="hero-sub">I’m a designer, developer and writer in Stockholm. I like figuring out what something should be, then making it real.</p>
       <div class="hero-actions">
         <a class="button" href="#hello">Say hello</a>
         <a href="#writing">or read my writing</a>
@@ -77,30 +77,35 @@
     </div>
   </section>
 
-  <section class="services" aria-label="What I make">
-    <article class="service service--crayon">
-      <h2>Identity</h2>
-      <p>Finding out what you actually stand for, then making it look like you on purpose.</p>
-    </article>
-    <article class="service service--pink">
-      <h2>Websites</h2>
-      <p>Sites built around what you have to say, not around a template's idea of you.</p>
-    </article>
-    <article class="service service--moss">
-      <h2>Digital things</h2>
-      <p>Prototypes, interactive tools and product or UX work when the project fits.</p>
-    </article>
+  <section class="about" id="about" aria-labelledby="about-title">
+    <h2 id="about-title">What I care about</h2>
+    <div class="about-body">
+      <p class="about-belief">I’m drawn to work that has a point of view.</p>
+      <p class="about-facts">Things that feel specific rather than polished into sameness. Products that respect the people using them. Technology that gives us more room to think and create, rather than simply helping us produce more.</p>
+      <p class="about-facts">I’m especially interested in AI as a design material and thinking tool. Not just what it can generate, but how it changes the way we explore ideas, make decisions and interact with technology.</p>
+    </div>
   </section>
 
-  <section class="about" id="about" aria-labelledby="about-title">
-    <h2 id="about-title">About</h2>
-    <div class="about-body">
-      <p class="about-belief">I care about why things are shaped the way they are, and how technology can make room for more ways of thinking, creating and living.</p>
-      <p class="about-facts">I'm a designer in Stockholm with a master's in human-computer interaction.</p>
-      <ul class="tags">
-        <li>UX &amp; product design</li>
-        <li>Frontend</li>
-      </ul>
+  <section class="work-list" aria-labelledby="work-title">
+    <div class="section-head">
+      <h2 id="work-title" class="publication">Selected work</h2>
+      <a href="/work">See all work →</a>
+    </div>
+
+    <!-- PLACEHOLDER: replace with 2–4 featured projects (same markup as on /work) -->
+    <div class="posts">
+      <article class="post">
+        <div class="project-image project-image--crayon" aria-hidden="true"></div>
+        <span class="post-meta">Category</span>
+        <span class="post-title">Project name</span>
+        <span class="post-desc">One or two sentences about the project and what you did.</span>
+      </article>
+      <article class="post">
+        <div class="project-image project-image--moss" aria-hidden="true"></div>
+        <span class="post-meta">Category</span>
+        <span class="post-title">Project name</span>
+        <span class="post-desc">One or two sentences about the project and what you did.</span>
+      </article>
     </div>
   </section>
 
@@ -141,6 +146,16 @@
         <span class="post-title">How to get really good at using AI</span>
         <span class="post-desc">An argument that effective AI use has less to do with clever prompting and more to do with understanding your own thinking well enough to communicate it. It connects interaction design with metacognition, self-awareness and the ability to externalize half-formed ideas.</span>
       </a>
+    </div>
+  </section>
+
+  <section class="teaser" aria-labelledby="teaser-title">
+    <div class="teaser-card">
+      <div>
+        <h2 id="teaser-title">Have something you want to make?</h2>
+        <p>I work with identities, websites and digital products.</p>
+      </div>
+      <a href="/services">Work with me →</a>
     </div>
   </section>
 </main>
