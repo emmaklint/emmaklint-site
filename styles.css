@@ -192,6 +192,7 @@ a.post:hover .post-title { text-decoration: underline; text-decoration-thickness
 
 /* Teaser / call to action card */
 .teaser { padding: 0 var(--pad) 96px; }
+.about + .teaser { padding-top: 96px; }
 .teaser-card {
   display: flex; align-items: flex-end; justify-content: space-between; gap: 24px 40px; flex-wrap: wrap;
   padding: 56px 40px 40px; border-radius: 16px;
@@ -264,6 +265,7 @@ a.post:hover .post-title { text-decoration: underline; text-decoration-thickness
   .page-intro { padding-block: 64px 56px; gap: 20px; }
   .page-intro p { font-size: 17px; }
   .teaser { padding-bottom: 72px; }
+  .about + .teaser { padding-top: 72px; }
   .teaser-card { padding: 48px 24px 28px; border-radius: 12px; }
   .teaser-card p { font-size: 17px; }
   .site-footer { padding-top: 72px; }
