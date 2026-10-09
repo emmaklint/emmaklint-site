@@ -108,6 +108,7 @@ h1, h2, h3, p { margin: 0; }
 .service--crayon { background: var(--crayon); }
 .service--pink { background: var(--crayon-pink); }
 .service--moss { background: var(--moss); color: var(--blush); }
+.service--moss a:not(.button) { color: inherit; }
 
 /* Offers (Services page): wide service cards with more detail */
 .offers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 96px var(--pad); }
