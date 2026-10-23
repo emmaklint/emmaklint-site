@@ -1,6 +1,6 @@
 # emmaklint.com
 
-Static site, no build step. Pages are `index.html` (home), `portfolio.html` (`/portfolio`) and `services.html` (`/services`), sharing `styles.css`. The header and footer are copied into each page, so edit all three when changing them.
+Static site, no build step. Pages are `index.html` (home), `portfolio.html` (`/portfolio`), `services.html` (`/services`) and one page per project in `work/` (e.g. `work/ai-is-a-spectrum.html` at `/work/ai-is-a-spectrum`), all sharing `styles.css`. The header and footer are copied into each page, so edit all of them when changing them.
 
 ## Deploy on Vercel
 1. Push this folder to a new GitHub repo.
@@ -9,5 +9,5 @@ Static site, no build step. Pages are `index.html` (home), `portfolio.html` (`/p
 
 ## Updating
 - Posts: edit the four `<a class="post">` blocks in the Writing section of `index.html`, and drop new images in `/images`.
-- Projects: replace the placeholder `<article class="post">` cards in `portfolio.html` and the Selected work section of `index.html`. Swap the colored `<div class="project-image">` for an `<img>` (or wrap the card in `<a class="post">` to link it). Remove the `noindex` line in `portfolio.html` and add `/portfolio` to `sitemap.xml` once real projects are in.
+- Projects: each project is an `<article class="project">` row (screenshot left, text right). Add a new one above the others in `portfolio.html`, and in the "Things I’m exploring" section of `index.html` if it belongs there. For a project page, copy `work/ai-is-a-spectrum.html` (its sections are `.case-section` text blocks and `.case-gallery` screenshot blocks), put images in `/images/<project>/`, and add the URL to `sitemap.xml`.
 - Colors: all in the `:root` block at the top of `styles.css`.
